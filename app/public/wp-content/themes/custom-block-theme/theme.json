@@ -1,0 +1,10 @@
+{
+    "version": 1.0, 
+    "templateParts": [
+       { 
+        "name" : "footer", 
+        "title" : "Footer",
+        "area" : "footer"
+        }
+    ]
+}

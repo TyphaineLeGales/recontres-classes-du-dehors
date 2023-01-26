@@ -1,0 +1,14 @@
+/*
+Theme Name: Custom
+Theme URI: https://wordpress.org/themes/twentytwentythree
+Author: Typhaine Le Gales
+Author URI: https://typhainelegales.com
+Description: Made for La Fabrique pedagogique des communs
+Version: 1.0
+Text Domain: twentytwentythree
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+*/
+
+h1 {
+    color: red;
+}
