@@ -9,6 +9,72 @@ Text Domain: twentytwentythree
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
 */
 
+body {
+    height:100%;
+}
+
+@font-face {
+    font-family: alegreya; /*corps de texte*/
+    src: url('/wp-content/themes/custom-block-theme/assets/fonts/alegreya/Alegreya-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: cabin; 
+    src: url('/wp-content/themes/custom-block-theme/assets/fonts/cabin/Cabin-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Fee; 
+    src: url('/wp-content/themes/custom-block-theme/assets/fonts/Fee/Fee.otf');
+    font-weight: normal;
+}
+
+.large-regular {
+    font-family: cabin; 
+    font-size: 20px;
+}
+
+.wp-block-group {
+    padding: 12px;
+}
+
+.wp-block-navigation-item__label {
+    padding: 10px;
+    font-family: cabin; 
+}
+
+p {
+    font-family: "cabin";
+}
+
 h1 {
-    color: red;
+    font-family: "alegreya";
+}
+
+h2, h3, h4 {
+    font-family: "cabin";
+}
+
+.wp-block-media-text {
+    border-color: blue;
+    border-style: dashed;
+    margin : 12px;
+}
+
+#footer {
+  border:solid;
+  width: 100%;
+  position:fixed;
+  bottom : 0;
+}
+
+#topNav  {
+
+}
+
+main {
+    border:solid;
+    height:90vh;
 }

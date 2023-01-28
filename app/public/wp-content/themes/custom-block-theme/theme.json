@@ -5,6 +5,16 @@
         "name" : "footer", 
         "title" : "Footer",
         "area" : "footer"
+        }, 
+        {
+            "name" : "topNav", 
+            "title" : "TopNav",
+            "area" : "header"
+        }, 
+        {
+            "name" : "main", 
+            "title" : "Main",
+            "area" : "main"
         }
     ]
 }

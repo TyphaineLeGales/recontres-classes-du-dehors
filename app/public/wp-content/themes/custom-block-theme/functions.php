@@ -9,6 +9,10 @@
         function customBlockTheme_setup() {
             // Add support for block styles.
             add_theme_support( 'wp-block-styles' );
+
+
+            wp_enqueue_style('custom-theme', get_template_directory_uri() . "/style.css", array(), '1.0', 'all');
+
         
             // Enqueue editor styles.
             add_editor_style( 'editor-style.css' );
