@@ -11,6 +11,15 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
 body {
     height:100%;
+    /* define theme colors*/
+    --primary-normal : #421ef4;
+    --primary-light : #F9F8FF;
+    --primary-dark: #3217b7;
+
+    --secondary-light : #edf5f3;
+    --secondary-light-active: #c6e1d9;
+    --secondary-normal : #489e83;
+    --secondary-dark : #367762;
 }
 
 @font-face {
@@ -40,12 +49,20 @@ body {
     padding: 12px;
 }
 
-.wp-block-navigation-item__label {
-    padding: 10px;
-    font-family: cabin; 
+.wp-block-pages-list__item {
+    margin-right: 12px;
 }
 
-p {
+li:has(.current-menu-item) {
+    color: var(--secondary-normal);
+}
+
+.current-menu-item {
+    color: var(--secondary-light-active);
+}
+
+
+p, a {
     font-family: "cabin";
 }
 
@@ -70,11 +87,8 @@ h2, h3, h4 {
   bottom : 0;
 }
 
-#topNav  {
-
-}
-
 main {
     border:solid;
     height:90vh;
 }
+
