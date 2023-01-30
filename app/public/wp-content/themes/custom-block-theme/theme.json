@@ -13,8 +13,8 @@
         }, 
         {
             "name" : "main", 
-            "title" : "Main",
-            "area" : "main"
+            "title" : "Content area",
+            "area" : "content-area"
         }
     ]
 }
