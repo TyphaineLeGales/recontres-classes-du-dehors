@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "fab-peda-blocks/fab-peda-banner",
+	"version": "0.1.0",
+	"title": "Banner",
+	"category": "media",
+	"icon": "smiley",
+	"description": "Banner component",
+	"attributes": {
+       "title" : {"type" : "string", "default": "enter a title here"}, 
+        "text" : {"type" : "string", "default": "enter some text"}
+    }, 
+	"supports": {
+		"html": false
+	},
+	"textdomain": "fab-peda-banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
