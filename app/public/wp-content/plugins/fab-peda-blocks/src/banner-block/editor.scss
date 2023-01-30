@@ -4,6 +4,25 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-fab-peda-blocks-fab-peda-banner {
-	border: 1px dotted #f00;
+// .wp-block-fab-peda-blocks-fab-peda-banner {
+// 	background-color:#fffded;
+// 	display:flex;
+// }
+
+.banner {
+	background-color:#fffded;
+	display:flex;
+	justify-content:space-around;
+	div > h1 {
+		color: #421ef4;
+		padding: 12px;
+	}
+	figure {
+		flex: 1;
+	}
+}
+
+.banner_textContent {
+	flex:1;
+	margin-left:24px;
 }

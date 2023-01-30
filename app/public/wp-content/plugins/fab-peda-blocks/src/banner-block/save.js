@@ -4,7 +4,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -17,9 +17,15 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 export default function save({attributes}) {
 	console.log("attributes in save", attributes)
+
 	return (
-		<div>
-			<h1>{attributes.title}</h1>
-		</div>
+			<div className={`banner banner-${attributes.color}`}>
+				<div className="banner_textContent">
+					<h1>{attributes.title}</h1>
+					<p>{attributes.text}</p>
+				</div>
+					<InnerBlocks.Content />
+			</div>
+
 	)
 }

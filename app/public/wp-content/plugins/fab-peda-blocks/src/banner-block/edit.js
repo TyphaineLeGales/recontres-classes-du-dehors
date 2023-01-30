@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps, useBlockDisplayInformation } from '@wordpress/block-editor';
+import { useBlockProps, useBlockDisplayInformation, InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,14 +29,35 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
+
+
 export default function Edit({attributes, setAttributes}) {
 	const props = useBlockProps()
 	return (
-		<div>
-			<label>Title</label>
-			<input value={attributes.title} onChange={(e) => {
-				setAttributes({title: e.target.value})
-				}}/>
+		<div className="banner">
+			<div className="banner_textContent">
+				<div>
+					<label>Title</label>
+					<input value={attributes.title} onChange={(e) => {
+						setAttributes({title: e.target.value})
+						}}/>
+				</div>
+				<div>
+				<label>Text content</label>
+				<input value={attributes.text} onChange={(e) => {
+					setAttributes({text: e.target.value})
+					}}/>
+				</div>
+				<div onChange={e => {setAttributes({color : e.target.value})}}>
+					<label>Background color</label>
+					<input type="radio" value="yellow" name="color" /> Yellow
+        			<input type="radio" value="green" name="color" /> Green
+        			<input type="radio" value="purple" name="color" /> Purple
+				</div>
+
+
+			</div>
+			<InnerBlocks/>
 		</div>
 	);
 }

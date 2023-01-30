@@ -9,7 +9,8 @@
 	"description": "Banner component",
 	"attributes": {
        "title" : {"type" : "string", "default": "enter a title here"}, 
-        "text" : {"type" : "string", "default": "enter some text"}
+        "text" : {"type" : "string", "default": "enter some text"}, 
+		"color" : {"type" : "string", "default" : "yellow"}
     }, 
 	"supports": {
 		"html": false
