@@ -1,0 +1,31 @@
+
+
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.banner {
+	background-color:#F9F8FF;
+	display:flex;
+	justify-content:space-around;
+	div > h1 {
+		color: #421ef4;
+		padding: 12px;
+	}
+	figure {
+		flex: 1;
+	}
+}
+
+.banner_textContent {
+	flex:1;
+	margin-left:24px;
+}
+
+.blockField {
+	display:flex;
+	flex-direction:column;
+}

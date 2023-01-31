@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "fab-peda-blocks/inscription-newsletter",
+	"version": "0.1.0",
+	"title": "Inscription newsletter",
+	"category": "fabpeda",
+	"icon": "bell",
+	"description": "Composant d'inscription à la newsletter",
+	"attributes": {
+       "title" : {"type" : "string", "default": "enter a title here"}, 
+        "text" : {"type" : "string", "default": "enter some text"}
+    }, 
+	"supports": {
+		"html": false
+	},
+	"textdomain": "inscription-newsletter",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

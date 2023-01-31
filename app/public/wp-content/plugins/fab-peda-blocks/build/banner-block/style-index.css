@@ -16,7 +16,7 @@
   grid-gap: 12px;
 }
 .banner div > h1 {
-  color: --primary-normal;
+  color: #421ef4;
 }
 .banner figure {
   grid-column: 8/11;

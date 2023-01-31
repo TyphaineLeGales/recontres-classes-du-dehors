@@ -34,6 +34,12 @@ body {
     font-weight: normal;
 }
 
+/* @font-face {
+    font-family: cabin; 
+    src: url('/wp-content/themes/custom-block-theme/assets/fonts/cabin/Cabin-SemiBold.otf');
+    font-weight: bolder;
+} */
+
 @font-face {
     font-family: Fee; 
     src: url('/wp-content/themes/custom-block-theme/assets/fonts/Fee/Fee.otf');
@@ -60,16 +66,25 @@ li:has(.current-menu-item) {
 
 p, a, label {
     font-family: "cabin";
+    font-weight: normal;
 }
 
 h1 {
     font-family: "Fee";
-    color:  var(--primary-normal);
 }
 
-h2, h3, h4 {
+h2, h4 {
     font-family: "cabin";
 }
+
+h3 {
+    font-family: "cabin";
+    font-weight: bolder;
+    text-transform: uppercase;
+    color : var(--primary-normal);
+    font-size: 0.9em;
+}
+
 
 .wp-block-media-text {
     border-color: blue;
@@ -97,6 +112,15 @@ h2, h3, h4 {
 
 .main {
     height:100%;
+}
+
+
+.text-only > h1{
+    margin-top: 0;
+}
+
+.text-two-blocks {
+    display:flex;
 }
 
 @media only screen and (max-width: 600px) {
