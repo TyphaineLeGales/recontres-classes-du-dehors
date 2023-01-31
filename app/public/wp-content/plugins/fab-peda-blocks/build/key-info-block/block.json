@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "fab-peda-blocks/fab-peda-banner",
+  "name": "fab-peda-blocks/fab-peda-key-info",
   "version": "0.1.0",
-  "title": "Banner-page",
+  "title": "key-info",
   "category": "fabpeda",
-  "icon": "smiley",
-  "description": "Banner component",
+  "icon": "pets",
+  "description": "Key info component",
   "attributes": {
     "title": {
       "type": "string",
@@ -20,7 +20,7 @@
   "supports": {
     "html": false
   },
-  "textdomain": "fab-peda-banner",
+  "textdomain": "fab-peda-key-info",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css"

@@ -7,7 +7,7 @@
  * Replace them with your own styles or remove the file completely.
  */
 .banner {
-  background-color: #fffded;
+  background-color: #F9F8FF;
   display: flex;
   justify-content: space-around;
 }
@@ -26,7 +26,7 @@
 
 .blockField {
   display: flex;
-  justify-content: column;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map*/

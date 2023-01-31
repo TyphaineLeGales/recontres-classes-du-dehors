@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/banner-block/edit.js":
-/*!**********************************!*\
-  !*** ./src/banner-block/edit.js ***!
-  \**********************************/
+/***/ "./src/key-info-block/edit.js":
+/*!************************************!*\
+  !*** ./src/key-info-block/edit.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/banner-block/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/key-info-block/editor.scss");
 
 /**
  * Retrieves the translation of text.
@@ -59,12 +59,10 @@ function Edit(_ref) {
   } = _ref;
   const props = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner_textContent"
+    className: "key-info"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "blockField"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "Banner title"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "Info title"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     value: attributes.title,
     onChange: e => {
       setAttributes({
@@ -73,31 +71,31 @@ function Edit(_ref) {
     }
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "blockField"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "banner text content"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Info content"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     value: attributes.text,
     onChange: e => {
       setAttributes({
         text: e.target.value
       });
     }
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, null));
+  })));
 }
 
 /***/ }),
 
-/***/ "./src/banner-block/index.js":
-/*!***********************************!*\
-  !*** ./src/banner-block/index.js ***!
-  \***********************************/
+/***/ "./src/key-info-block/index.js":
+/*!*************************************!*\
+  !*** ./src/key-info-block/index.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/banner-block/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/banner-block/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/banner-block/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/banner-block/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/key-info-block/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/key-info-block/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/key-info-block/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/key-info-block/block.json");
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
@@ -139,10 +137,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/banner-block/save.js":
-/*!**********************************!*\
-  !*** ./src/banner-block/save.js ***!
-  \**********************************/
+/***/ "./src/key-info-block/save.js":
+/*!************************************!*\
+  !*** ./src/key-info-block/save.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -176,18 +174,16 @@ function save(_ref) {
     attributes
   } = _ref;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "banner_textContent"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.text)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null));
+    className: "key-info"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.text));
 }
 
 /***/ }),
 
-/***/ "./src/banner-block/editor.scss":
-/*!**************************************!*\
-  !*** ./src/banner-block/editor.scss ***!
-  \**************************************/
+/***/ "./src/key-info-block/editor.scss":
+/*!****************************************!*\
+  !*** ./src/key-info-block/editor.scss ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -196,10 +192,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/banner-block/style.scss":
-/*!*************************************!*\
-  !*** ./src/banner-block/style.scss ***!
-  \*************************************/
+/***/ "./src/key-info-block/style.scss":
+/*!***************************************!*\
+  !*** ./src/key-info-block/style.scss ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -248,13 +244,13 @@ module.exports = window["wp"]["i18n"];
 
 /***/ }),
 
-/***/ "./src/banner-block/block.json":
-/*!*************************************!*\
-  !*** ./src/banner-block/block.json ***!
-  \*************************************/
+/***/ "./src/key-info-block/block.json":
+/*!***************************************!*\
+  !*** ./src/key-info-block/block.json ***!
+  \***************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fab-peda-blocks/fab-peda-banner","version":"0.1.0","title":"Banner-page","category":"fabpeda","icon":"smiley","description":"Banner component","attributes":{"title":{"type":"string","default":"enter a title here"},"text":{"type":"string","default":"enter some text"}},"supports":{"html":false},"textdomain":"fab-peda-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fab-peda-blocks/fab-peda-key-info","version":"0.1.0","title":"key-info","category":"fabpeda","icon":"pets","description":"Key info component","attributes":{"title":{"type":"string","default":"enter a title here"},"text":{"type":"string","default":"enter some text"}},"supports":{"html":false},"textdomain":"fab-peda-key-info","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
@@ -370,8 +366,8 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"banner-block/index": 0,
-/******/ 			"banner-block/style-index": 0
+/******/ 			"key-info-block/index": 0,
+/******/ 			"key-info-block/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -423,7 +419,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["banner-block/style-index"], () => (__webpack_require__("./src/banner-block/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["key-info-block/style-index"], () => (__webpack_require__("./src/key-info-block/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

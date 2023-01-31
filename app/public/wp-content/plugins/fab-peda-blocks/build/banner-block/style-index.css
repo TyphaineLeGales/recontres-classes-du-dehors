@@ -7,22 +7,11 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.banner-green {
-  background-color: #edf5f3;
-}
-
-.banner-yellow {
-  background-color: #fffded;
-}
-
-.banner-purple {
-  background-color: #F9F8FF;
-}
-
 .banner {
   padding: 0 12px;
   display: grid;
   justify-content: space-around;
+  background-color: #F9F8FF;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 12px;
 }

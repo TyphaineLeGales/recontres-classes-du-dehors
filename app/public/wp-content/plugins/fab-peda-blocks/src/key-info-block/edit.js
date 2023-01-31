@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps, useBlockDisplayInformation, InnerBlocks } from '@wordpress/block-editor';
+import { useBlockProps} from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -34,22 +34,21 @@ import './editor.scss';
 export default function Edit({attributes, setAttributes}) {
 	const props = useBlockProps()
 	return (
-		<div className="banner">
-			<div className="banner_textContent">
+		<div className="key-info">
+			
 				<div className="blockField">
-					<h1>Banner title</h1>
+					<h1>Info title</h1>
 					<input value={attributes.title} onChange={(e) => {
 						setAttributes({title: e.target.value})
 						}}/>
 				</div>
 				<div className="blockField">
-				<p>banner text content</p>
+				<p>Info content</p>
 				<input value={attributes.text} onChange={(e) => {
 					setAttributes({text: e.target.value})
 					}}/>
 				</div>
-			</div>
-			<InnerBlocks/>
+	
 		</div>
 	);
 }

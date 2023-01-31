@@ -17,7 +17,7 @@
             // Enqueue editor styles.
             add_editor_style( 'editor-style.css' );
 
-            //add_theme_support( 'editor-color-palette', array() );
+            remove_theme_support('core-block-patterns');
         }
         endif; // myfirsttheme_setup
         add_action( 'after_setup_theme', 'customBlockTheme_setup' );
