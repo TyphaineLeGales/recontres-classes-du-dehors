@@ -5,12 +5,6 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-// .wp-block-fab-peda-blocks-fab-peda-banner {
-// 	border-color: #21759b;
-// 	color: #fff;
-// 	padding: 2px;
-// }
-
 .banner-green {
 	background-color: #edf5f3;
 }
@@ -30,7 +24,7 @@
 	grid-template-columns: repeat(12, 1fr);
 	grid-gap: 12px;
 	div > h1 {
-		color: #421ef4;
+		color : --primary-normal;
 	}
 	figure {
 		grid-column : 8/11;
@@ -39,6 +33,9 @@
 
 .banner_textContent {
 	grid-column : 2/6;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
 }
 
 @media only screen and (max-width: 600px) {

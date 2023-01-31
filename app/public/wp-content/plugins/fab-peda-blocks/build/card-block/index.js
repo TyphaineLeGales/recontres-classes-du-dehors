@@ -219,7 +219,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fab-peda-blocks/fab-peda-card","version":"0.1.0","title":"Card","category":"media","icon":"pets","description":"Card component","supports":{"html":false},"textdomain":"fab-peda-card","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fab-peda-blocks/fab-peda-card","version":"0.1.0","title":"Card","category":"fabpeda","icon":"pets","description":"Card component","supports":{"html":false},"textdomain":"fab-peda-card","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

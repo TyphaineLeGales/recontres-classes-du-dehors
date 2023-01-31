@@ -10,8 +10,23 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       fab-peda-blocks
  *
- * @package           fab-peda-banner
+ * @package           fab-peda-blocks
  */
+
+function register_custom_block_category($categories) {
+	$categories[] = array(
+		'slug' => 'fabpeda', 
+		'title' => 'fabpeda'
+	);
+
+	return $categories;
+}
+
+if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) ) {
+	add_filter( 'block_categories_all', 'register_custom_block_category' );
+} else {
+	add_filter( 'block_categories', 'register_custom_block_category' );
+}
 
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
@@ -20,9 +35,12 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function fab_peda_banner_fab_peda_blocks_block_init() {
+function fab_peda_blocks_block_init() {
 	register_block_type( __DIR__ . '/build/banner-block' );
 	register_block_type( __DIR__ . '/build/card-block' );
 	// register multiple plugins in here
 }
-add_action( 'init', 'fab_peda_banner_fab_peda_blocks_block_init' );
+add_action( 'init', 'fab_peda_blocks_block_init' );
+
+
+

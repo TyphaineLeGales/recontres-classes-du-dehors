@@ -36,19 +36,19 @@ export default function Edit({attributes, setAttributes}) {
 	return (
 		<div className="banner">
 			<div className="banner_textContent">
-				<div>
+				<div className="blockField">
 					<label>Title</label>
 					<input value={attributes.title} onChange={(e) => {
 						setAttributes({title: e.target.value})
 						}}/>
 				</div>
-				<div>
+				<div className="blockField">
 				<label>Text content</label>
 				<input value={attributes.text} onChange={(e) => {
 					setAttributes({text: e.target.value})
 					}}/>
 				</div>
-				<div onChange={e => {setAttributes({color : e.target.value})}}>
+				<div onChange={e => {setAttributes({color : e.target.value})}} className="blockField">
 					<label>Background color</label>
 					<input type="radio" value="yellow" name="color" /> Yellow
         			<input type="radio" value="green" name="color" /> Green

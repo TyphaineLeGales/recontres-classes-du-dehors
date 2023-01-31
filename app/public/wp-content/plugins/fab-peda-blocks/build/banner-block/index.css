@@ -24,4 +24,9 @@
   margin-left: 24px;
 }
 
+.blockField {
+  display: flex;
+  justify-content: column;
+}
+
 /*# sourceMappingURL=index.css.map*/

@@ -62,12 +62,13 @@ li:has(.current-menu-item) {
 }
 
 
-p, a {
+p, a, label {
     font-family: "cabin";
 }
 
 h1 {
     font-family: "Fee";
+    color:  var(--primary-normal);
 }
 
 h2, h3, h4 {

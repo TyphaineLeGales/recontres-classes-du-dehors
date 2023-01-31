@@ -62,14 +62,18 @@ function Edit(_ref) {
     className: "banner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "banner_textContent"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Title"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "blockField"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Title"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     value: attributes.title,
     onChange: e => {
       setAttributes({
         title: e.target.value
       });
     }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Text content"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "blockField"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Text content"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     value: attributes.text,
     onChange: e => {
       setAttributes({
@@ -81,7 +85,8 @@ function Edit(_ref) {
       setAttributes({
         color: e.target.value
       });
-    }
+    },
+    className: "blockField"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Background color"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     type: "radio",
     value: "yellow",
@@ -269,7 +274,7 @@ module.exports = window["wp"]["i18n"];
   \*************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fab-peda-blocks/fab-peda-banner","version":"0.1.0","title":"Banner","category":"media","icon":"smiley","description":"Banner component","attributes":{"title":{"type":"string","default":"enter a title here"},"text":{"type":"string","default":"enter some text"},"color":{"type":"string","default":"yellow"}},"supports":{"html":false},"textdomain":"fab-peda-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"fab-peda-blocks/fab-peda-banner","version":"0.1.0","title":"Banner","category":"fabpeda","icon":"smiley","description":"Banner component","attributes":{"title":{"type":"string","default":"enter a title here"},"text":{"type":"string","default":"enter some text"},"color":{"type":"string","default":"yellow"}},"supports":{"html":false},"textdomain":"fab-peda-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
