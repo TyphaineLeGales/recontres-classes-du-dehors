@@ -8,8 +8,7 @@
 	"icon": "bell",
 	"description": "Composant d'inscription à la newsletter",
 	"attributes": {
-       "title" : {"type" : "string", "default": "enter a title here"}, 
-        "text" : {"type" : "string", "default": "enter some text"}
+       "userEmail" : {"type" : "string", "default": "enter a title here"}, 
     }, 
 	"supports": {
 		"html": false

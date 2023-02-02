@@ -3,7 +3,7 @@
   "apiVersion": 2,
   "name": "fab-peda-blocks/fab-peda-banner",
   "version": "0.1.0",
-  "title": "Banner-page",
+  "title": "Page banner",
   "category": "fabpeda",
   "icon": "smiley",
   "description": "Banner component",

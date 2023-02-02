@@ -20,6 +20,7 @@ body {
     --secondary-light-active: #c6e1d9;
     --secondary-normal : #489e83;
     --secondary-dark : #367762;
+    --theme-spacing : 6px;
 }
 
 @font-face {
@@ -64,17 +65,28 @@ li:has(.current-menu-item) {
 }
 
 
-p, a, label {
+p, a, label, li {
     font-family: "cabin";
     font-weight: normal;
+    font-size: 0.9em;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 h1 {
     font-family: "Fee";
 }
 
-h2, h4 {
+h2, h4, h5, h6 {
     font-family: "cabin";
+}
+
+h5 {
+    margin-bottom: 3px;
 }
 
 h3 {
@@ -98,22 +110,53 @@ h3 {
     padding: 24px;
 }
 
-#footer {
-  border:solid;
+footer {
   width: 100%;
-  position:fixed;
-  bottom : 0;
+  background-color: var(--secondary-light);
+  flex:0;
+  padding-left: 24px;
 }
+
+.footer-block > h1 {
+    color:  var(--secondary-normal);
+}
+
+.footer-block > a {
+    color:  var(--secondary-normal);
+}
+
+.footer-block {
+    flex : 1;
+}
+
+.wp-element-button, .wp-block-button__link {
+    border-radius: 0;
+    background-color: var(--secondary-normal) !important;
+    font-family:'cabin' !important;
+    text-transform:uppercase;
+    font-weight:light;
+    font-size:0.8em;
+}
+
+input {
+    padding: 12px 6px;
+}
+
+
 
 #topNav {
     margin-top: 24px;
     padding: 0 24px;
 }
 
-.main {
-    height:100%;
+.main { 
+    flex: 1;
 }
 
+
+.text-only {
+    padding: 0 24px;
+}
 
 .text-only > h1{
     margin-top: 0;
@@ -121,10 +164,26 @@ h3 {
 
 .text-two-blocks {
     display:flex;
+    flex-direction:row;
 }
+
+.newsletter-inscription {
+    display:flex;
+    align-items: flex-start;
+}
+
+
 
 @media only screen and (max-width: 600px) {
 	.key-info-divider {
 		flex-direction: column;
 	}
+
+    footer {
+        display:none;
+    }
+
+    .text-two-blocks {
+        flex-direction:column;
+    }
   }
