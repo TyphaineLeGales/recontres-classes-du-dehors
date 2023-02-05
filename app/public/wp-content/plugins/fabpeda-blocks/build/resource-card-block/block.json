@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "fabpeda-blocks/fabpeda-resource-card",
+  "version": "0.1.0",
+  "title": "resource-card",
+  "category": "fabpeda",
+  "icon": "album",
+  "description": "Key info component",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "enter a title here"
+    },
+    "text": {
+      "type": "string",
+      "default": "enter some text"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fabpeda-resource-card",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

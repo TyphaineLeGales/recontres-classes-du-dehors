@@ -20,6 +20,8 @@ body {
     --secondary-light-active: #c6e1d9;
     --secondary-normal : #489e83;
     --secondary-dark : #367762;
+
+    --complementary-light : #fffded;
     --theme-spacing : 6px;
 }
 
@@ -45,6 +47,17 @@ body {
     font-family: Fee; 
     src: url('/wp-content/themes/custom-block-theme/assets/fonts/Fee/Fee.otf');
     font-weight: normal;
+}
+
+.btn-white-background {
+    color : var(--secondary-normal);
+    background-color: var(--secondary-normal);
+    border: var(--secondary-normal);
+}
+
+.btn-full-background {
+    color : white;
+    background-color: var(--secondary-normal);
 }
 
 .large-regular {
@@ -85,6 +98,11 @@ h2, h4, h5, h6 {
     font-family: "cabin";
 }
 
+h4 {
+    font-size: 1.2rem;
+    margin: 6px;
+}
+
 h5 {
     margin-bottom: 3px;
 }
@@ -99,15 +117,19 @@ h3 {
 
 
 .wp-block-media-text {
-    border-color: blue;
-    border-style: dashed;
-    margin : 12px;
+    padding : 24px;
+}
+
+.wp-block-media-text__media > img {
+    transform: scale(0.5);
 }
 
 .key-info-divider{
     background-color:  var(--secondary-light);
     justify-content: space-around;
-    padding: 24px;
+    padding: 48px;
+    margin : 0
+
 }
 
 footer {
@@ -172,6 +194,69 @@ input {
     align-items: flex-start;
 }
 
+.newsletter-divider {
+    background-color: var(--complementary-light);
+}
+
+.newsletter-divider > .wp-block-media-text__content > h1 {
+    color : var(--primary-normal);
+
+}
+
+.wp-block-media-text__content {
+    padding : 0 !important;
+}
+
+.wp-block-group {
+   margin: 24px;
+}
+
+.card-container {
+    display:grid !important;
+    grid-template-columns: repeat(12, 1fr) !important;
+	grid-gap: 12px !important;
+}
+
+.card-container > li {
+    border: solid;
+    border-color: var( --primary-light);
+    grid-column : span 3 !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container > li > figure > img{
+    height: 33vh;
+    object-fit: cover;
+}
+
+.card-content {
+  flex:1;
+    margin: 0 12px !important;
+   justify-content:space-between;
+   align-items: flex-start !important;
+}
+
+.card-type {
+    color: var(--primary-normal);
+    text-transform : uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.card-btn-wrapper {
+    margin-top: 48px !important;
+    margin-bottom: 12px !important;
+    width: 100%;
+    display:flex;
+    align-items:center;
+}
+
+.card-extra-info {
+   color: #838098;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -185,5 +270,9 @@ input {
 
     .text-two-blocks {
         flex-direction:column;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(3, 1fr) !important;
     }
   }

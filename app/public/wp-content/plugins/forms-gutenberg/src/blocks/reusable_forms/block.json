@@ -1,8 +1,0 @@
-{
-	"attributes": {
-		"formId": {
-			"type": "string",
-			"default": ""
-		}
-	}
-}

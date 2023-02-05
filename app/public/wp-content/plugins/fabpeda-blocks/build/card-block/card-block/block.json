@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "fabpeda-blocks/fabeda-card",
+  "version": "0.1.0",
+  "title": "card-block",
+  "category": "fabpeda",
+  "icon": "layout",
+  "description": "Card component",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "enter a title here"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fabpeda-card",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

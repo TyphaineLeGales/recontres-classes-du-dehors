@@ -1,0 +1,119 @@
+{
+	"apiVersion": "1",
+	"name": "bicb/carousel",
+	"title": "Carousel",
+	"description": "Responsive image carousel slider.",
+	"category": "widgets",
+	"keywords": [
+		"image-carousel",
+		"logo-carousel",
+		"client-logo-carousel"
+	],
+	"textdomain": "carousel-block",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"cId": {
+			"type": "string",
+			"default": ""
+		},
+		"carousels": {
+			"type": "array",
+			"default": [
+				{
+					"image": {
+						"id": null,
+						"url": "",
+						"alt": "",
+						"title": ""
+					}
+				},
+				{
+					"image": {
+						"id": null,
+						"url": "",
+						"alt": "",
+						"title": ""
+					}
+				},
+				{
+					"image": {
+						"id": null,
+						"url": "",
+						"alt": "",
+						"title": ""
+					}
+				}
+			]
+		},
+		"carouselOptions": {
+			"type": "object",
+			"default": {
+				"columns": {
+					"desktop": 3,
+					"tablet": 2,
+					"mobile": 1
+				},
+				"columnGap": 30,
+				"isLoop": true,
+				"speed": 1.5,
+				"autoplayOptions": {
+					"enabled": true
+				}
+			}
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"color": "#0000"
+			}
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"vertical": "10px",
+				"horizontal": "10px"
+			}
+		},
+		"isPage": {
+			"type": "boolean",
+			"default": true
+		},
+		"pageSize": {
+			"type": "string",
+			"default": "12px"
+		},
+		"pageColor": {
+			"type": "string",
+			"default": "#4527a4"
+		},
+		"isPrevNext": {
+			"type": "boolean",
+			"default": true
+		},
+		"prevNextSize": {
+			"type": "string",
+			"default": "25px"
+		},
+		"prevNextColor": {
+			"type": "string",
+			"default": "#4527a4"
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"preview": true
+		}
+	},
+	"editorScript": "file:dist/editor.js",
+	"script": "file:dist/script.js"
+}
