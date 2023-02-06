@@ -58,27 +58,10 @@ function Edit(_ref) {
     setAttributes
   } = _ref;
   const props = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
+  console.log("props in card block", props);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "resource-card"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "blockField"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "Info title"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    value: attributes.title,
-    onChange: e => {
-      setAttributes({
-        title: e.target.value
-      });
-    }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "blockField"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Info content"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    value: attributes.text,
-    onChange: e => {
-      setAttributes({
-        text: e.target.value
-      });
-    }
-  })));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Hey"));
 }
 
 /***/ }),
@@ -173,9 +156,10 @@ function save(_ref) {
   let {
     attributes
   } = _ref;
+  console.log("in save", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)());
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "resource-card"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.text));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Hey"));
 }
 
 /***/ }),

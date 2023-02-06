@@ -1,31 +1,39 @@
 <!-- wp:template-part {"slug":"topNav","tagName":"topNav"} /-->
-    <!-- wp:group {"className":"main"} -->
-    <div class="wp-block-group main">
-        <!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:query {"queryId":0,"query":{"perPage":8,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+<!-- wp:group {"className":"main"} -->
+<div class="wp-block-group main"><!-- wp:group {"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:query {"queryId":0,"query":{"perPage":8,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
     <div class="wp-block-query"><!-- wp:post-template {"className":"card-container"} -->
     <!-- wp:post-featured-image {"width":"","height":""} /-->
     
-    <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-    <div class="wp-block-group"><!-- wp:pods/pods-block-field {"field":"resource-type"} /-->
+    <!-- wp:group {"className":"card-content","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group card-content"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
+    <div class="wp-block-group"><!-- wp:pods/pods-block-field {"field":"resource-type","className":"card-type"} /-->
     
-    <!-- wp:post-title /-->
+    <!-- wp:post-title {"level":4} /-->
     
     <!-- wp:pods/pods-block-field {"name":{"label":"post","value":"post"},"field":"resource-author"} /-->
-    </div>
+    
+    <!-- wp:pods/pods-block-field {"field":"resource-extra-info","className":"card-extra-info"} /--></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:buttons {"className":"card-btn-wrapper","layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons card-btn-wrapper"><!-- wp:button {"backgroundColor":"white","style":{"color":{"text":"#489e83"},"border":{"radius":"1px"}},"className":".btn-white-background is-style-outline"} -->
+    <div class="wp-block-button .btn-white-background is-style-outline"><a class="wp-block-button__link has-white-background-color has-text-color has-background wp-element-button" style="border-radius:1px;color:#489e83">Voir</a></div>
+    <!-- /wp:button --></div>
+    <!-- /wp:buttons -->
+    
+    <!-- wp:pods/pods-block-field {"field":"resource-url"} /--></div>
     <!-- /wp:group -->
     <!-- /wp:post-template -->
-    <!-- wp:query-pagination -->
-        <!-- wp:query-pagination-previous /-->
-
-        <!-- wp:query-pagination-numbers /-->
-
-        <!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination -->
     
-    </div>
+    <!-- wp:query-pagination -->
+    <!-- wp:query-pagination-previous /-->
+    
+    <!-- wp:query-pagination-numbers /-->
+    
+    <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination --></div>
     <!-- /wp:query --></div>
-    <!-- /wp:group -->
-    </div>
+    <!-- /wp:group --></div>
     <!-- /wp:group -->
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

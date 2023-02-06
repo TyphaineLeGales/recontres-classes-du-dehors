@@ -39,7 +39,7 @@ if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) ) {
 function fab_peda_blocks_block_init() {
 	 // register multiple plugins in here
 	register_block_type( __DIR__ . '/build/banner-block' );
-	register_block_type( __DIR__ . '/build/resource-card-block' );
+	register_block_type( __DIR__ . '/build/resource-btn-block' );
 	register_block_type( __DIR__ . '/build/key-info-block' );
 }
 

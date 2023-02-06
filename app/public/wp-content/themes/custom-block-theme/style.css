@@ -14,6 +14,7 @@ body {
     /* define theme colors*/
     --primary-normal : #421ef4;
     --primary-light : #F9F8FF;
+    --primary-ligh-hover : #F1EFFF;
     --primary-dark: #3217b7;
 
     --secondary-light : #edf5f3;
@@ -115,15 +116,6 @@ h3 {
     font-size: 0.9em;
 }
 
-
-.wp-block-media-text {
-    padding : 24px;
-}
-
-.wp-block-media-text__media > img {
-    transform: scale(0.5);
-}
-
 .key-info-divider{
     background-color:  var(--secondary-light);
     justify-content: space-around;
@@ -132,24 +124,6 @@ h3 {
 
 }
 
-footer {
-  width: 100%;
-  background-color: var(--secondary-light);
-  flex:0;
-  padding-left: 24px;
-}
-
-.footer-block > h1 {
-    color:  var(--secondary-normal);
-}
-
-.footer-block > a {
-    color:  var(--secondary-normal);
-}
-
-.footer-block {
-    flex : 1;
-}
 
 .wp-element-button, .wp-block-button__link {
     border-radius: 0;
@@ -158,6 +132,10 @@ footer {
     text-transform:uppercase;
     font-weight:light;
     font-size:0.8em;
+}
+
+.wp-block-buttons {
+    margin-left: 0 !important;
 }
 
 input {
@@ -211,6 +189,10 @@ input {
    margin: 24px;
 }
 
+.wp-block-pages-list__item {
+    font-size : 1em;
+}
+
 .card-container {
     display:grid !important;
     grid-template-columns: repeat(12, 1fr) !important;
@@ -219,7 +201,7 @@ input {
 
 .card-container > li {
     border: solid;
-    border-color: var( --primary-light);
+    border-color: var( --primary-ligh-hover);
     grid-column : span 3 !important;
     width: 100% !important;
     display: flex;
@@ -257,9 +239,146 @@ input {
    color: #838098;
 }
 
+.calendar-event {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr) !important;
+	grid-gap: 12px !important;
+    margin : 0 !important;
+}
 
+.calendar-event-inner {
+    grid-column : 2/12 !important;
+    display: grid !important;
+    border: solid;
+    border-color: var( --primary-ligh-hover);
+    grid-template-columns: repeat(10, 1fr) !important;
+	grid-gap: 12px !important;
+    padding-left : 24px;
+    margin : 12px 0 !important;
+}
+
+.calendar-event-info {
+    grid-column: 1 / 7 !important;
+}
+
+.calendar-event-info > h2 {
+    margin : 0 !important;
+}
+
+.calendar-date-info {
+    color: var(--primary-normal);
+}
+
+.calendar-event-inner > .wp-block-buttons {
+    grid-column: 8/10 !important;
+}
+
+.banner {
+    display:grid !important;
+    grid-template-columns: repeat(12, 1fr) !important;
+	grid-gap: 12px !important;
+}
+
+.banner > .wp-block-media-text__content {
+    grid-column: 2 / 6 !important;
+}
+
+.banner > .wp-block-media-text__media {
+    grid-column:  8/11 !important;
+}
+
+
+footer {
+    display:grid !important;
+    grid-template-columns: repeat(12, 1fr) !important;
+	grid-gap: 12px !important;
+    background-color: var(--secondary-light);
+    flex:0;
+  }
+
+.footer-inscription {
+    grid-column: 1 / 5 !important;
+    margin-left: 0 !important;
+}
+  
+.footer-a-propos {
+    grid-column: 6 / 9 !important;
+}
+
+.footer-autres {
+    grid-column: 9/12 !important;
+}
+
+.licence {
+    padding-top: 6px;
+    grid-column: 1 / -1 !important; 
+    text-align:center;
+    border-top: solid;
+    border-color: var( --secondary-light-active);
+}
+
+footer > .wp-block-group {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+    margin : 0 !important;
+}
+
+footer > .wp-block-group > ul{
+   margin : 0 !important;
+   font-weight: lighter;
+}
+
+footer > .wp-block-group > ul > li{
+    margin-bottom : 12px;
+ }
+
+footer > .wp-block-group > h5{
+    margin: 0 !important;
+    margin-top: 24px !important;
+   text-align: start;
+   font-weight: bold;
+ }
+
+ .info-card {
+     width: fit-content;
+     text-align: center;
+     display: grid !important;
+    }
+    
+    .info-card > h1 {
+        padding : 48px;
+        border:solid;
+        border-color: var(--secondary-normal);
+        position: relative;
+ }
+
+ .info-card > figure {
+    position: relative;
+    padding: 24px;
+    top:45%;
+ }
+ 
+ .info-card-row {
+    justify-content:space-between;
+    align-items:flex-end !important;
+    margin-top:-10%;
+    padding: 24px;
+ }
 
 @media only screen and (max-width: 600px) {
+    .banner {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    
+    .banner > .wp-block-media-text__content {
+        grid-column: span 1 !important;
+    }
+    
+    .banner > .wp-block-media-text__media {
+        grid-column:  span 1!important;
+    }
 	.key-info-divider {
 		flex-direction: column;
 	}
@@ -274,5 +393,13 @@ input {
 
     .card-container{
         grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .calendar-event-info {
+        grid-column: span 10 !important;
+    }
+
+    .calendar-event-inner > .wp-block-buttons {
+        grid-column: 3/8 !important;
     }
   }
