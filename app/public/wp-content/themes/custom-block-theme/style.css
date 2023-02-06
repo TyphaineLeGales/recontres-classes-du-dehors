@@ -50,17 +50,6 @@ body {
     font-weight: normal;
 }
 
-.btn-white-background {
-    color : var(--secondary-normal);
-    background-color: var(--secondary-normal);
-    border: var(--secondary-normal);
-}
-
-.btn-full-background {
-    color : white;
-    background-color: var(--secondary-normal);
-}
-
 .large-regular {
     font-family: cabin; 
     font-size: 20px;
@@ -119,9 +108,8 @@ h3 {
 .key-info-divider{
     background-color:  var(--secondary-light);
     justify-content: space-around;
-    padding: 48px;
-    margin : 0
-
+    padding: 48px 64px;
+    margin : 0 !important;
 }
 
 
@@ -147,6 +135,7 @@ input {
 #topNav {
     margin-top: 24px;
     padding: 0 24px;
+    justify-content:space-between;
 }
 
 .main { 
@@ -155,7 +144,7 @@ input {
 
 
 .text-only {
-    padding: 0 24px;
+    padding: 24px;
 }
 
 .text-only > h1{
@@ -165,6 +154,7 @@ input {
 .text-two-blocks {
     display:flex;
     flex-direction:row;
+    padding: 0 24px;
 }
 
 .newsletter-inscription {
@@ -181,8 +171,17 @@ input {
 
 }
 
-.wp-block-media-text__content {
-    padding : 0 !important;
+.wp-block-media-text {
+    padding: 0 64px;
+   
+}
+
+.text-image {
+ margin-top: -6%;
+}
+
+.wp-block-media-text >.wp-block-media-text__media  {
+    transform: scale(0.6);
 }
 
 .wp-block-group {
@@ -192,6 +191,8 @@ input {
 .wp-block-pages-list__item {
     font-size : 1em;
 }
+
+/*---------------  MEDIATHEQUE - RESOURCE CARD  -------------------------*/
 
 .card-container {
     display:grid !important;
@@ -239,6 +240,9 @@ input {
    color: #838098;
 }
 
+
+/*---------------  AGENDA - CALENDAR ITEM  -------------------------*/
+
 .calendar-event {
     display: grid !important;
     grid-template-columns: repeat(12, 1fr) !important;
@@ -273,6 +277,9 @@ input {
     grid-column: 8/10 !important;
 }
 
+
+/*--------------- BANNERS  -------------------------*/
+
 .banner {
     display:grid !important;
     grid-template-columns: repeat(12, 1fr) !important;
@@ -287,6 +294,16 @@ input {
     grid-column:  8/11 !important;
 }
 
+.home-banner-title {
+    font-size : 64px;
+    font-weight:lighter;
+}
+
+.home-banner-content {
+    padding : 24px 0;
+}
+
+/*---------------  FOOTER  -------------------------*/
 
 footer {
     display:grid !important;
@@ -341,6 +358,9 @@ footer > .wp-block-group > h5{
    font-weight: bold;
  }
 
+
+ /*---------------  INFO CARD ROW  -------------------------*/
+
  .info-card {
      width: fit-content;
      text-align: center;
@@ -358,6 +378,7 @@ footer > .wp-block-group > h5{
     position: relative;
     padding: 24px;
     top:45%;
+    z-index:10;
  }
  
  .info-card-row {
@@ -365,6 +386,7 @@ footer > .wp-block-group > h5{
     align-items:flex-end !important;
     margin-top:-10%;
     padding: 24px;
+    flex-wrap: wrap !important;
  }
 
 @media only screen and (max-width: 600px) {
@@ -402,4 +424,14 @@ footer > .wp-block-group > h5{
     .calendar-event-inner > .wp-block-buttons {
         grid-column: 3/8 !important;
     }
+
+    .wp-block-media-text {
+        padding: 0 48px;
+        margin-top: -6%;
+    }
+
+    .wp-block-media-text .wp-block-media-text__content {
+        padding: 0 !important;
+    }
+    
   }

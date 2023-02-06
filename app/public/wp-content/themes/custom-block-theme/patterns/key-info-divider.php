@@ -6,16 +6,34 @@
  * Categories: featured
  */
 ?>
-<!-- wp:group {"className":"key-info-divider","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group key-info-divider"><!-- wp:fab-peda-blocks/fab-peda-key-info {"title":"Key info 1","text":"0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres."} -->
-<div class="key-info"><h1>Key info 1</h1><p>0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres.</p></div>
-<!-- /wp:fab-peda-blocks/fab-peda-key-info -->
+<!-- wp:group {"style":{"color":{"background":"#edf5f3"}},"className":"key-info-divider","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group key-info-divider has-background" style="background-color:#edf5f3"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"style":{"color":{"text":"#489e83"}}} -->
+<h1 class="has-text-color" style="color:#489e83">45 organisations</h1>
+<!-- /wp:heading -->
 
-<!-- wp:fab-peda-blocks/fab-peda-key-info {"title":"Key Info 2","text":"0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres."} -->
-<div class="key-info"><h1>Key Info 2</h1><p>0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres.</p></div>
-<!-- /wp:fab-peda-blocks/fab-peda-key-info -->
+<!-- wp:paragraph -->
+<p>0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:fab-peda-blocks/fab-peda-key-info {"title":"Key info 3","text":"0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres."} -->
-<div class="key-info"><h1>Key info 3</h1><p>0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres.</p></div>
-<!-- /wp:fab-peda-blocks/fab-peda-key-info --></div>
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"style":{"color":{"text":"#489e83"}}} -->
+<h1 class="has-text-color" style="color:#489e83">45 organisations</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"style":{"color":{"text":"#489e83"}}} -->
+<h1 class="has-text-color" style="color:#489e83">45 organisations</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>0rganisations apportent, temps, idées, moyens et compétences à l’organisation des rencontres.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

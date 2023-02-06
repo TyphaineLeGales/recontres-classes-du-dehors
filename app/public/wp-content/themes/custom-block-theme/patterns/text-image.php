@@ -7,15 +7,10 @@
 ?>
 
 
-
-<!-- wp:media-text {"mediaId":251,"mediaLink":"http://localhost:10004/semerveiller-1/","mediaType":"image"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="http://localhost:10004/wp-content/uploads/2023/01/semerveiller-1.png" alt="" class="wp-image-251 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3} -->
-<h3>SUBTITLE</h3>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"level":1} -->
-<h1>Titre</h1>
+<!-- wp:media-text {"mediaId":674,"mediaLink":"http://localhost:10004/infos-pratiques/conciergerie/frame-1-1-2/","mediaType":"image","className":"text-image"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile text-image"><figure class="wp-block-media-text__media"><img src="http://localhost:10004/wp-content/uploads/2023/02/Frame-1-1.png" alt="" class="wp-image-674 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"className":"left"} -->
+<h1 class="left">Enseigner dehors</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
